@@ -79,3 +79,107 @@ h1 {
   font-size: 0.9rem;
   font-family: 'Poppins', sans-serif;
 }
+
+
+#titulo-con-boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+#kuromi-boton {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+#kuromi-boton img {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#kuromi-boton img:hover {
+  transform: scale(1.1);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#creditos-aprobados {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: #4f0735;
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#creditos-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto 1rem auto;
+  font-family: 'Poppins', sans-serif;
+  color: #4f0735;
+}
+
+#creditos-texto {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+#barra-externa {
+  width: 100%;
+  height: 18px;
+  background-color: #f1c8d6;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#barra-interna {
+  height: 100%;
+  width: 0%;
+  background-color: #f06292; /* rosa intenso */
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+#celebracion {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+}
+
+#confeti-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.mensaje-feliz {
+  font-size: 3rem;
+  color: #c2185b;
+  font-family: 'Poppins', cursive;
+  z-index: 10000;
+  text-shadow: 1px 1px 5px white;
+}
+
+
+
